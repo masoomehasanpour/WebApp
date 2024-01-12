@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in </title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body
+    class="flex items-center justify-center h-screen  bg-[url(../static/img/pawel-czerwinski-wPqbJIFJaic-unsplash.jpg)]  bg-no-repeat bg-cover ">
+    <!-- login card  -->
+    <div
+        class="w-full sm:w-3/5 text-white font-kdram p-4 flex-col md:flex-row flex md:space-x-8 lg:bg-gray-100 rounded-2xl ">
+
+        <!-- login form side  -->
+        <div class="bg-gray-200 p-4 text-black rounded-2xl shadow-xl bg-opacity-72 text-[#262528]">
+            <div class="flex items-start justify-center sm:justify-between text-[#262528] font-bold flex-row ">
+                <h1 class="text-xl mt-16" >Hassan pour</h1>
+
+            </div>
+            <h1 class="text-6xl mb-24 mt-24 text-[#262528] font-extrabold font-source">Sign in</h1>
+
+            <button
+                class="font-source flex justify-center items-center flex-row bg-[#4f85e2]  text-white  my-9 py-2 px-10 rounded-xl w-full hover:bg-blue-700" onclick="location.href='/login-by-google';">
+                <img src="../static/img/google-svgrepo-com.svg" alt="" class="w-6  mr-2" >
+                <span>Sign in with Google </span>
+            </button>
+
+        </div>
+
+        <div class="lg:w-2/3 md:flex hidden">
+            <img src="../static/img/login1.svg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

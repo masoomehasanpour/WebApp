@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts Section</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../static/CSS/styles.css" />
+  </head>
+  <body style="background-color: rgba(78,56,133,0.9)">
+    <div class="contacts" id="contacts">
+      <div class="contacts--container">
+        <!-- ============ MAIN TITLE ============ -->
+        <h1 class="main-title">Telegram</h1>
+        <div class="contacts-body">
+          <div class="contacts-form">
+            <form method="post">
+              <div class="input-container">
+                <label for="Name" class="label"> Name </label>
+                <input placeholder="{{ user.first_name }}" class="form-input input" />
+              </div>
+              <div class="input-container">
+                <label for="Email" class="label"> Email </label>
+                <input placeholder="{{ user.email }}" class="form-input input" />
+              </div>
+              <div class="input-container">
+                <label for="Message" class="label"> Message </label>
+                <textarea placeholder="Type your message...." class="form-input message"></textarea>
+              </div>
+
+              <div class="submit-btn">
+                <button type="button" class="submit" onclick="location.href='/telegram';">
+                  <p>Send</p>
+                  <div class="submit-icon">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </div>
+                </button>
+                     <button type="button" class="submit" onclick="location.href='/logout';">
+                  <p>Exit</p>
+                  <div class="submit-icon">
+                    <i class="fa-solid fa-sign-out"></i>
+                  </div>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <div class="contacts-details">
+            <a href="mailto:{{ user.email}}" class="personal-details">
+              <div class="details">
+                <i class="fa-solid fa-at"></i>
+              </div>
+              <p style="color: #eaeaea; font-size: 22px ">{{ user.email}}</p>
+            </a>
+
+            <div class="socialmedia-icons">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://medium.com"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-medium"></i>
+              </a>
+              <a
+                href="https://blog.blogspot.com/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-blogger"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://www.reddit.com/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-reddit"></i>
+              </a>
+              <a
+                href="https://codepen.io/"
+                target="_blank"
+                rel="noreferrer"
+                class="socialicon"
+              >
+                <i class="fa-brands fa-codepen"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="../static/img/contactsNavy.svg" alt="contacts" class="contacts--img" />
+    </div>
+
+  </body>
+</html>
